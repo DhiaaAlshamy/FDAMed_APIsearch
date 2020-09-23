@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <script src="index.js" type="text/javascript"></script>
+        <script src="drugs.json" type="text/json"></script>
+    </head>
+    <body>
+
+    <div id="container">
+        <button onclick="fetchTheNames()">fetch The Names</button>
+        <form id="form" style="max-width: 1000px;">
+            <label for="search-by">search By</label>
+            <select id="search-by">
+                <option value="gen-name">Generic Name</option>
+                <option value="br-name">Brand Name</option>
+                <option value="ind">Indecations</option>
+            </select>
+            <label for="med-gen-name">Medicin Generic Name (الاسم العلمي):</label>
+            <select id="med-gen-name"></select>
+            <label for="med-br-name">Medicin Brand Name (الاسم التجاري ):</label>
+            <select id="med-br-name"></select>
+            <label for="indication">Indication: (دواعي الإستعمال)</label>
+            <input type="text" id="indication">
+        </form>
+        <button type="submit" value="Search" onclick="addEvent()">dssss</button>
+    </div>
+    <div id="results"></div>
+    </body>
+   
+    
+</html>
